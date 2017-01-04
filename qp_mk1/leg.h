@@ -1,19 +1,15 @@
 #ifndef LEG_H
 #define LEG_H
 
-#ifdef TOTE2
-// For version 2:
+// dimensions in mm
+// distance hip - knee axis
 #define COXA    12.0
+// distance knee - ankle axis
 #define FEMUR   42.0
-#define TIBIA   38.5
-#define BASE    21.0
-#else
-// For version 1:
-#define COXA    8.0
-#define FEMUR   20.5
-#define TIBIA   28.5
-#define BASE    18.5
-#endif
+// distance ankle - ground
+#define TIBIA   37.0
+// distance hip - base
+#define BASE    34.0
 
 const signed char LEG_X[4] = {-1, -1, 1, 1};
 const signed char LEG_Y[4] = {1, -1, -1, 1};
